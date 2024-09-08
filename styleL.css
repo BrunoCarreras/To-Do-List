@@ -1,35 +1,34 @@
-/* Navbar */
+
 .navbar-custom {
-    background-color: #ffffff; /* Color de fondo de la navbar */
-    border-bottom: 2px solid #4c5258; /* Borde inferior de la navbar */
+    background-color: #ffffff;
+    border-bottom: 2px solid #4c5258;
     margin-bottom: 30px;
     transition: background-color 0.5s, border-bottom 0.5s;
 }
 
 .navbar-custom .navbar-brand {
-    color: #343a41; /* Color del texto de la marca */
+    color: #343a41;
 }
 
 .navbar-custom .navbar-nav .nav-link {
-    color: #343a41; /* Color de los enlaces de navegación */
+    color: #343a41;
 }
 
 .navbar-custom .navbar-nav .nav-link:hover {
-    color: #343a41; /* Color de los enlaces al pasar el ratón */
+    color: #343a41;
 }
 
 .navbar-custom .navbar-toggler-icon {
-    background-image: url('data:image/svg+xml;charset=utf8,...'); /* Imagen de ícono del toggler si deseas personalizarlo */
+    background-image: url('data:image/svg+xml;charset=utf8,...');
 }
 
 .navbar-custom .navbar-toggler {
-    border: none; /* Elimina el borde del botón de toggler */
+    border: none;
 }
 
 .navbar-custom .navbar-toggler:focus {
-    box-shadow: none; /* Elimina el foco visual del botón de toggler */
+    box-shadow: none;
 }
-/* Modo oscuro */
 .dark-mode {
     background-color: #121212;
     color: #ffffff;
@@ -78,7 +77,6 @@
     transition: background-color 0.5s, color 0.5s;
 }
 
-/* Estilo del contenedor principal */
 .container {
     width: 80%;
     margin: auto;
@@ -89,7 +87,6 @@
     border: 1px solid black;
 }
 
-/* Estilo del formulario */
 form {
     margin-bottom: 20px;
     padding: 20px;
@@ -103,7 +100,7 @@ input[type="text"], input[type="date"] {
     display: block;
     margin-bottom: 10px;
     padding: 10px;
-    width: calc(100% - 22px); /* Ajusta el ancho para el padding y borde */
+    width: calc(100% - 22px);
     border: 1px solid #000000;
     border-radius: 4px;
 }
@@ -123,7 +120,6 @@ button:hover {
     background-color: #617283;
 }
 
-/* Estilo de la lista de tareas */
 .task-list {
     list-style: none;
     padding: 0;

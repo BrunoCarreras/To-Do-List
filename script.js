@@ -8,7 +8,6 @@ document.getElementById('taskForm').addEventListener('submit', function(event) {
     const endDate = new Date(document.getElementById('endDate').value);
     const today = new Date();
 
-    // Validar fechas
     if (startDate < today) {
         alert('La fecha de inicio no puede ser anterior a la fecha actual.');
         return;
@@ -22,7 +21,6 @@ document.getElementById('taskForm').addEventListener('submit', function(event) {
     addTask(taskName, startDate.toISOString().split('T')[0], endDate.toISOString().split('T')[0]);
     saveTasks();
 
-    // Limpiar el formulario
     document.getElementById('taskForm').reset();
 });
 
@@ -92,11 +90,9 @@ function loadTasks() {
 const darkModeBtn = document.getElementById('darkModeBtn');
 const body = document.body;
 
-// Modo oscuro
 darkModeBtn.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
 
-    // Cambiar el texto del botón según el modo
     if(body.classList.contains('dark-mode')) {
         darkModeBtn.textContent = 'Modo Claro';
     } else {
