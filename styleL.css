@@ -1,0 +1,159 @@
+/* Navbar */
+.navbar-custom {
+    background-color: #ffffff; /* Color de fondo de la navbar */
+    border-bottom: 2px solid #4c5258; /* Borde inferior de la navbar */
+    margin-bottom: 30px;
+    transition: background-color 0.5s, border-bottom 0.5s;
+}
+
+.navbar-custom .navbar-brand {
+    color: #343a41; /* Color del texto de la marca */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #343a41; /* Color de los enlaces de navegación */
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #343a41; /* Color de los enlaces al pasar el ratón */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,...'); /* Imagen de ícono del toggler si deseas personalizarlo */
+}
+
+.navbar-custom .navbar-toggler {
+    border: none; /* Elimina el borde del botón de toggler */
+}
+
+.navbar-custom .navbar-toggler:focus {
+    box-shadow: none; /* Elimina el foco visual del botón de toggler */
+}
+/* Modo oscuro */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .navbar-custom {
+    background-color: #343a41;
+    border-bottom-color: #222;
+}
+
+.dark-mode .navbar-custom .navbar-brand,
+.dark-mode .navbar-custom .navbar-nav .nav-link {
+    color: #ffffff;
+    transition: color 0.5s;
+}
+
+.dark-mode .container {
+    background-color: #333;
+    border: 1px solid #ffffff;
+}
+
+.dark-mode form {
+    background-color: #444;
+    border: 1px solid #ffffff;
+}
+
+.dark-mode input[type="text"], .dark-mode input[type="date"] {
+    background-color: #555;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.dark-mode button {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.dark-mode .task-item {
+    background-color: #555;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.body{
+    background-color: #1A374D;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Estilo del contenedor principal */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #B1D0E0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+/* Estilo del formulario */
+form {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #B1D0E0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+}
+
+input[type="text"], input[type="date"] {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: calc(100% - 22px); /* Ajusta el ancho para el padding y borde */
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #343a41;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.3s;
+}
+
+button:hover {
+    background-color: #617283;
+}
+
+/* Estilo de la lista de tareas */
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #eaf5fa;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item button {
+    margin-left: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: rgb(102, 101, 101);
+}
+
+.task-name {
+    font-weight: bold;
+}
+
+.task-dates {
+    margin: 0 10px;
+}
